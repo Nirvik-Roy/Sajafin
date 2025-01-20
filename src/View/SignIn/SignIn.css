@@ -1,0 +1,187 @@
+.sign-in-background-main{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100vh;
+    background-image: url("../../assets/Frame 427319643.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in-box-main{
+    background-color: white;
+    width: 100%;
+    max-width: 38%;
+    min-width: 38%;
+    padding: 25px 45px;
+}
+.sign-in-form-box{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 30px 25px 30px;
+}
+.sign-in-head{
+    font-family: Poppins, sans-serif ;
+    font-size: 25px;
+    color: black;
+    margin-top: 20px;
+}
+.email-label{
+    font-family: Poppins, sans-serif ;
+    font-size: 14px;
+    color: black;
+}
+.input-div{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin-top: 5px;
+}
+.email-input{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0px 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 45px;
+    color: black;
+}
+.password-input{
+    padding: 0px 42px 0px 10px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 45px;
+    color: black;
+}
+.forgot-password-para{
+    font-family: Poppins, sans-serif ;
+    font-size: 13px;
+    color: black;
+}
+.forgot-password-div{
+    display: flex;
+    justify-content: end;
+    margin-top: 7px;
+}
+.login-btn-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.login-btn{
+    font-family: Poppins, sans-serif ;
+    background-color: rgb(220, 44, 29);
+    width: 100%;
+    max-width: 98%;
+    min-width: 98%;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.or-div{
+    text-align: center;
+    margin-top: 33px;
+}
+.or-div p {
+    color:rgb(32, 32, 32);
+    font-family: Poppins, sans-serif ;
+    position: relative;
+}
+.or-div p::before{
+    content: "";
+    position: absolute;
+    border: 1px solid   rgb(32, 32, 32);
+    width: 100%;
+    height: 0.5px;
+    top: 11px;
+    left: 22px;
+    max-width: 40%;
+    min-width: 40%;
+}
+.or-div p::after{
+    content: "";
+    position: absolute;
+    border: 1px solid   rgb(32, 32, 32);
+    width: 100%;
+    height: 0.5px;
+    top: 11px;
+    right: 22px;
+    max-width: 40%;
+    min-width: 40%;
+}
+.social-icons-div{
+    display: flex;
+    justify-content: center;
+    column-gap: 35px;
+    margin-top: 25px;
+}
+.social-img{
+    width: 100%;
+    max-width: 24px;
+    min-width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.social-img img{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+}
+.create-account-button-div{
+    margin-top: 25px;
+}
+.create-account-btn{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 47px;
+    color: black;
+    font-family: Poppins ,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 22px;
+    transition: 0.2s linear all;
+    cursor: pointer;
+}
+.create-account-btn:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 10px white;
+}
+.relative{
+    position: relative;
+}
+.relative i{
+    position: absolute;
+    color: white;
+    top: 15px;
+    right: 15px;
+}
+.sign-up-background-main{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100vh;
+    background-image: url("../../Images/Frame 427319643 (1).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

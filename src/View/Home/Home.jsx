@@ -6,6 +6,12 @@ import img2 from '../../assets/Group 3 (1).png'
 import img3 from '../../assets/Group 4534343 (1).jpg'
 import './Home.css'
 import HomeMarkets from './HomeMarkets'
+import Coreprinciples from './Coreprinciples'
+import Solutions from './Solutions'
+import GetStarted from './GetStarted'
+import TradeCompromise from './TradeCompromise'
+import Beginner from './Beginner'
+import HomeFooter from './HomeFooter'
 const Home = () => {
   return (
     <>
@@ -90,8 +96,14 @@ in the industry</p>
     </div>
 </div>
 <HomeMarkets/>
+<Coreprinciples/>
+<Solutions/>
+<GetStarted/>
+<TradeCompromise/>
+<Beginner/>
+
       </div>
-    
+    <HomeFooter/>
     </>
   )
 }
