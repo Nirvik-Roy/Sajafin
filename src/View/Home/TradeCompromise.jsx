@@ -5,9 +5,11 @@ import img3 from '../../assets/Vector (31).png'
 import phoneimg from '../../assets/Group 4534343 (1).jpg'
 import smallimg1 from '../../assets/Group 2 (2).png'
 import smallimg2 from '../../assets/Group 3 (1).png'
+import Header2 from '../../Layout/Header2'
 const TradeCompromise = () => {
   return (
     <>
+   
       <div style={{
         paddingBottom:"100px"
       }} >

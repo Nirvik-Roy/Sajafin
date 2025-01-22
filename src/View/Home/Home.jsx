@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../../Layout/Header'
 import arrow from '../../assets/Arrow 1.png'
 import img1 from '../../assets/Group 2 (2).png'
@@ -13,6 +13,9 @@ import TradeCompromise from './TradeCompromise'
 import Beginner from './Beginner'
 import HomeFooter from './HomeFooter'
 const Home = () => {
+    useEffect(()=>{
+       window.scrollTo({top:0,behavior:'instant'})
+    },[])
   return (
     <>
         <Header/>

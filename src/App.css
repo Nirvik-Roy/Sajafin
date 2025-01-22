@@ -9,7 +9,7 @@ h1,h2,h3,h4,h5,h6{
   padding: 0;
 }
 p{
-  margin: 0 0;
+  margin-bottom: 0 !important;
   padding: 0;
 }
 ul{
@@ -131,6 +131,14 @@ iframe{
 .menu img{
   width: 18px;
 }
+.menu i{
+  font-size: 16px;
+  color: #25262B;
+}
+.menu.active i{
+  font-size: 16px;
+  color: #fff;
+}
 .dashboard-container{
   width: calc(100% - 220px);
   margin-left: auto;
@@ -189,7 +197,7 @@ iframe{
   width: 40px;
   height: 40px;
 }
-.profile-img{
+.profile-avatar-img{
   border: 1px solid black;
   height: 35px;
   width: 35px;
@@ -198,7 +206,7 @@ iframe{
   justify-content: center;
   align-items: center;
 }
-.profile-img img{
+.profile-avatar-img img{
   width: 35px;
   height: 35px;
 }

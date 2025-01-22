@@ -6,6 +6,7 @@ import TransactionLogo from '../assets/decred.png'
 import TradeLogo from '../assets/trade.png'
 import SettingLogo from '../assets/Vector.png';
 import LogOut from '../assets/Vector (32).png'
+import {NavLink} from 'react-router-dom'
 const Sidebar = () => {
   return (
     <>
@@ -15,12 +16,29 @@ const Sidebar = () => {
         <div className="side-menubar" style={{
             marginTop:'30px'
         }}>
-          <div><a href="#" className="menu active"><img src={DashboardLogo} alt="" /><span>Dashboard</span></a></div>
-          <div><a href="#"  className="menu"><img src={StatisticLogo} alt="" /><span>Statistics</span></a></div>
-          <div ><a href="#" className="menu"><img src={TransactionLogo} alt="" /><span>Transaction</span></a></div>
-          <div><a href="#" className="menu"><img src={TradeLogo} alt="" /><span>Trade</span></a></div>
-          <div><a href="#"  className="menu"><img src={SettingLogo} alt="" /><span>Account Setting</span></a></div>
-          <div><a href="#"  className="menu"><img src={LogOut} alt="" /><span>Log out</span></a></div>
+          <div><NavLink to = '/dashboard' className="menu ">
+          {/* <img src={DashboardLogo} alt="" /> */}
+          <i class="fa-solid fa-cube"></i>
+          <span>Dashboard</span></NavLink></div>
+          <div><NavLink to = '/stats' className="menu">
+          {/* <img src={StatisticLogo} alt="" /> */}
+          <i class="fas fa-chart-line"></i>
+          <span>Statistics</span></NavLink></div>
+          <div ><NavLink to = '/transaction' className="menu">
+          {/* <img src={TransactionLogo} alt="" /> */}
+          <i class="fa-solid fa-money-bill-transfer"></i>
+          <span>Transaction</span></NavLink></div>
+          <div><NavLink to = '/trade' className="menu">
+          <img src={TradeLogo} alt="" />
+          <span>Trade</span></NavLink></div>
+          <div><NavLink to = '/accountdetails' className="menu">
+          {/* <img src={SettingLogo} alt="" /> */}
+          <i class="fa-solid fa-sliders"></i>
+          <span>Account Setting</span></NavLink></div>
+          <div><NavLink to = '/' className="menu">
+          {/* <img src={LogOut} alt="" /> */}
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span>Log out</span></NavLink></div>
           
         </div>
       </div>

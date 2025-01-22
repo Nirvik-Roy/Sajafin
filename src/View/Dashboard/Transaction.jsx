@@ -1,4 +1,4 @@
-import React from 'react'
+import {React , useEffect }from 'react'
 import Header2 from '../../Layout/Header2'
 import './Dashboard.css'
 import img from '../../assets/search-normal.png'
@@ -10,6 +10,9 @@ import img7 from '../../assets/image (4).png'
 import arrowdown from '../../assets/Vector (34).png'
 import arrowup from '../../assets/Vector (35).png'
 const Transaction = () => {
+      useEffect(()=>{
+          window.scrollTo({top:0,behavior:'instant'})
+        },[])
   return (
     <>
       <Header2 name={'Transactions'}/>
@@ -102,7 +105,7 @@ const Transaction = () => {
                         <td className='table_data_1'>
                             <div className='img_div_Wrapper'>
                             <img src={img6}/>
-                                <p className='mt-3'>Ashlynn</p>
+                                <p >Ashlynn</p>
                             </div>
                         </td>
                         <td className='table_data_1'>
@@ -116,7 +119,7 @@ const Transaction = () => {
                                 height:'20px',
                                 borderRadius:'50%'
                             }} src={img7}/>
-                                <p className='mt-3'>Bitcoin</p>
+                                <p >Bitcoin</p>
                             </div>
                         </td>
                         <td className='table_data_1 text-success'>
