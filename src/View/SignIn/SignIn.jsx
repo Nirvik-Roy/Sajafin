@@ -3,9 +3,11 @@ import './SignIn.css'
 import google from '../../assets/Ellipse 2196.png'
 import facebook from '../../assets/Ellipse 2196 (1).png'
 import twitter from '../../assets/Ellipse 2196 (2).png'
+import { useNavigate } from 'react-router-dom'
 
 const SignIn = () => {
  const [show,setshow] = useState(false)
+ const navigate =useNavigate()
  const toggleShow = () => {
   setshow(!show)
  }
@@ -38,7 +40,7 @@ const SignIn = () => {
                             </div>
 
                             <div className='login-btn-div'>
-                                <button className='login-btn'>Login</button>
+                                <button className='login-btn' onClick={(()=>navigate('/dashboard'))}>Login</button>
                             </div>
                             <div className='or-div'>
                                 <p>OR</p>
