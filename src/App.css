@@ -218,8 +218,9 @@ iframe{
 
 .cross-btn{
   display: none;
-  float: right;
-  margin-bottom: 20px;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 .hamburger-button{

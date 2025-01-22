@@ -231,10 +231,11 @@ table{
     display: flex;
     column-gap: 25px;
     align-items: center;
+    
   }
   .crypto-btn{
     color: #8E8E90;
-    font-size: 13px;
+    font-size: 10px;
   }
   .crypto-btn.active{
     background-color: #F6D3CF;
@@ -1526,7 +1527,7 @@ table{
     }
 
     .cross-btn {
-      display: block; 
+      display: flex; 
     }
     
   }
@@ -1563,4 +1564,26 @@ table{
       min-width: 100%;
       max-width: 100%;
     }
+
+    .four-divs-wrapper{
+      margin-top: 20px;
+    }
+
+    .header-text h2{
+      font-size: 13px;
+    }
+
+    .header-text p{
+      font-size: 10px;
+    }
   }
+  @media (max-width: 350px){
+    .crypto-buttons{
+      overflow-x: scroll;
+    }
+
+    .header-right{
+      column-gap: 10px;
+    }
+  }
+ 
