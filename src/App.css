@@ -93,6 +93,7 @@ iframe{
   max-width: 200px;
   height: 100vh;
   background-color: #F8FAFB;
+  z-index: 999999;
 }
 .sidebar-wrapper{
   padding: 20px;

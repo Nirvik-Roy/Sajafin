@@ -1380,6 +1380,11 @@ table{
       min-width: 21%;
       max-width: 21%;
     }
+    .transaction_calender{
+      width: 100%;
+      min-width: 22%;
+      max-width: 22%;
+    }
   }
   @media (max-width: 1140px) {
     .crypto-market-section-wrapper{
@@ -1556,6 +1561,23 @@ table{
       width: 100%;
       min-width: 47%;
       max-width: 47%;
+    }
+  }
+  @media (max-width: 480px){
+    .transcation_search_date_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+    .transaction_search{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .transaction_calender{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
     }
   }
   @media (max-width: 420px){
