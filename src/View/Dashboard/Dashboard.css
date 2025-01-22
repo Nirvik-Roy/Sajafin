@@ -570,7 +570,7 @@ table{
   .profile-name{
     font-size: 20px;
     font-weight: 500;
-    margin-top: 5px;
+    /* margin-top: 5px; */
   }
   
   .profile-email{
@@ -1358,6 +1358,8 @@ table{
     border-radius: 10px;
     position: absolute;
   }
+
+  
   @media(max-width:1400px){
     .activity-time{
       width: 110px;
@@ -1368,5 +1370,197 @@ table{
       width: 110px;
       max-width: 110px;
       min-width: 110px;
+    }
+  }
+
+  @media (max-width: 1299px) {
+    .small-div{
+      width: 100%;
+      min-width: 21%;
+      max-width: 21%;
+    }
+  }
+  @media (max-width: 1140px) {
+    .crypto-market-section-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .crypto-chart-section{
+      width: 100%;
+      min-width: 85%;
+      max-width: 85%;
+    }
+    .market-chart-section{
+      width: 100%;
+      min-width: 85%;
+      max-width: 85%;
+    }
+  }
+  @media (max-width: 1199px) {
+    .four-divs-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 15px;
+    }
+    .small-div{
+      width: 100%;
+      min-width: 45%;
+      max-width: 45%;
+    }
+  }
+
+  @media (max-width: 999px){
+    .crypto-market-section-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 30px;
+    }
+    .crypto-chart-section{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .market-chart-section{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .header-text h2{
+      font-size: 17px;
+    }
+
+    .header-text p{
+      font-size: 12px;
+    }
+    .header-right .notify-btn{
+      width: 30px;
+      height: 30px;
+    }
+    .header-right{
+      column-gap: 20px;
+    }
+
+  }
+  @media (max-width: 860px){
+    .sell-buy-section{
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 30px;
+      padding-left: 0px;
+    }
+    .sell-order-table-container{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .buy-order-table-container{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .crypto-chart-section{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .market-chart-section{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .profile-name{
+      column-gap: 8px !important;
+    }
+    .profile-info p{
+      font-size: 10px;
+    }
+    .profile-avatar-img{
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .small-div{
+      width: 100%;
+      min-width: 48%;
+      max-width: 48%;
+    }
+    .profile-avatar-img{
+      width: 25px;
+      height: 25px;
+    }
+    .profile-avatar-img img{
+      width: 25px;
+      height: 25px;
+    }
+    .profile-name{
+      column-gap: 2px !important;
+    }
+    .profile-info p{
+      font-size: 10px;
+    }
+    .header-right .notify-btn{
+      width: 25px;
+      height: 25px;
+    }
+    .search-icon{
+      font-size: 18px !important;
+    }
+    .sidebar-section{
+      position: absolute;
+      /* transform: translate(-100%, 0px); */
+    }
+    .dashboard-container{
+      width: 100%;
+    }
+    .sell-order-table-container{
+      padding: 20px 80px;
+    }
+    .buy-order-table-container{
+      padding: 20px 80px;
+    }
+
+    .hamburger-button{
+      display: flex;
+    }
+
+    .cross-btn {
+      display: block; 
+    }
+    
+  }
+
+  @media (max-width: 670px){
+    .sell-order-table-container{
+      padding: 20px 50px;
+    }
+    .buy-order-table-container{
+      padding: 20px 50px;
+    }
+  }
+
+  @media (max-width: 560px){
+    .sell-order-table-container{
+      padding: 20px;
+    }
+    .buy-order-table-container{
+      padding: 20px;
+    }
+  }
+
+
+  @media (max-width: 540px){
+    .small-div{
+      width: 100%;
+      min-width: 47%;
+      max-width: 47%;
+    }
+  }
+  @media (max-width: 420px){
+    .small-div{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
     }
   }

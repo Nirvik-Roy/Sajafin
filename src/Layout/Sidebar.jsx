@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SidebarLogo from '../assets/268e6df2-6afb-485c-8df5-7af5c055fb8e-removebg-preview 1 (1).png'
 import DashboardLogo from '../assets/box1.png'
 import StatisticLogo from '../assets/wpf_statistics.png'
@@ -7,11 +7,14 @@ import TradeLogo from '../assets/trade.png'
 import SettingLogo from '../assets/Vector.png';
 import LogOut from '../assets/Vector (32).png'
 import {NavLink} from 'react-router-dom'
-const Sidebar = () => {
+const Sidebar = ({openSidebar}) => {
+  
   return (
     <>
-      <div className='sidebar-section'>
+       <div className="sidebar-section">
+      <div className="cross-btn" onClick={openSidebar}><i class="fa-solid fa-circle-xmark"></i></div>
       <div className="sidebar-wrapper">
+      
         <div className="sidebar-logo"><img src={SidebarLogo} alt="" /></div>
         <div className="side-menubar" style={{
             marginTop:'30px'

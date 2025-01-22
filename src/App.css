@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins;
+  /* outline: 1px solid red; */
 }
 h1,h2,h3,h4,h5,h6{
   margin: 0;
@@ -184,7 +185,7 @@ iframe{
   min-width: 30%;
   justify-content: right;
   align-items: center;
-  column-gap: 30px;
+  column-gap: 20px;
 }
 .profile-info{
   display: flex;
@@ -213,4 +214,14 @@ iframe{
 .profile-info p{
   font-size: 12px;
   font-weight: 500;
+}
+
+.cross-btn{
+  display: none;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.hamburger-button{
+  display: none;
 }
