@@ -1401,6 +1401,11 @@ table{
       min-width: 85%;
       max-width: 85%;
     }
+    .transaction_calender{
+      width: 100%;
+      min-width: 25%;
+      max-width: 25%;
+    }
   }
   @media (max-width: 1199px) {
     .four-divs-wrapper{
@@ -1445,6 +1450,11 @@ table{
     .header-right{
       column-gap: 20px;
     }
+    .transaction_calender{
+      width: 100%;
+      min-width: 28%;
+      max-width: 28%;
+    }
 
   }
   @media (max-width: 860px){
@@ -1483,6 +1493,11 @@ table{
     .profile-avatar-img{
       width: 30px;
       height: 30px;
+    }
+    .transaction_calender{
+      width: 100%;
+      min-width: 32%;
+      max-width: 32%;
     }
   }
 
@@ -1533,6 +1548,11 @@ table{
 
     .cross-btn {
       display: flex; 
+    }
+    .transaction_calender{
+      width: 100%;
+      min-width: 35%;
+      max-width: 35%;
     }
     
   }
