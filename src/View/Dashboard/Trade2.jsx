@@ -25,7 +25,7 @@ const Trade2 = () => {
       <div className='dashboard-container' style={{
         paddingBottom:"50px"
       }}>
-      <div className="d-flex justify-content-start align-items-center" style={{
+      <div className="trade-five-div-wrapper d-flex justify-content-start align-items-center" style={{
         columnGap:'20px'
       }}>
           <div className="small-div2"><p>Number of Trade</p>
@@ -46,7 +46,7 @@ const Trade2 = () => {
                                   borderRadius:"10px",
                                   border:'none',
                                   marginTop:"15px"
-                              }} className='btn btn-success'>Withdraw</button>
+                              }} className='balance-button btn btn-success'>Withdraw</button>
                           </div>
         </div>
         <div className='traders_wrapper mt-4'>

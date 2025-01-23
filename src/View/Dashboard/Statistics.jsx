@@ -15,6 +15,7 @@ import email_icon from '../../assets/Group 74643.png'
 import facebook_icon from '../../assets/ri_facebook-fill.png'
 import uparrow_icon from '../../assets/Group 4534364.png'
 import downarrow_icon from '../../assets/Group 4534365.png'
+import trade_small_graph from '../../assets/Vector 18.png'
 import { Chart } from "react-google-charts";
 import Header2 from '../../Layout/Header2'
 const Statistics = () => {
@@ -183,54 +184,161 @@ const Statistics = () => {
     <Header2 name={'Statistics'}/>
       <div className="dashboard-container" style={{paddingBottom: "50px"}}>
         <div className="current-completed-section">
-          <div className="current-trade-container">
-            <div className="current-trade-header">
+          <div className="current-trade-container" style={{overflowX: scroll}}>
+          <div className="current-trade-header">
               <h2 className='current-trade-heading'>Current Trade</h2>
               <div className="current-trade-btn">Current</div>
             </div>
-
-
-            {/* Trade List */}
-      <div className="trade-list">
-        {tradeData.map((trade, index) => (
-          <div key={index} className={`trade-item ${trade.trend}`}>
-            {/* Icon and Details */}
-            <div className="trade-info">
-              <div className="trade-icon">
-                <img
-                  src={trade.logo}
-                  
-                />
-              </div>
-              <div>
-              
-                <h3 className="trade-name">{trade.name}</h3>
-                <p className="trade-symbol">{trade.symbol}</p>
-              </div>
-            </div>
-
-            {/* Price and Change */}
-            <div className="trade-price">
-            <img src={trade.graph} alt="" />
-            <div>
-            <h4>{trade.price}</h4>
-            <p className={`trade-change ${trade.trend}`}>{trade.change} This Week</p>
-            </div>
-            </div>
-
-            {/* Chart and Options */}
-            <div className="trade-actions">
-              <img src={trade.biggraph} alt="" />
-
-            </div>
-
-            <div className="trade-view">
-              <img src={eye_symbol} alt="" />
-              <img src={file_symbol} alt="" />
-            </div>
-          </div>
-        ))}
-      </div>
+          
+          <table>
+            <tbody>
+              <tr className='current-trade-table-row'>
+                <td className='current-table-data-1'>
+                  <div className="current-logo-name-div">
+                    <img src={xauusd_img} alt="" />
+                    <div className="current-name-para">
+                      <h2 className='current-name'>XAUUSD</h2>
+                      <p>XMR</p>
+                    </div>
+                  </div>
+                </td>
+                <td className='current-table-data-2'>
+                  <div className="current-trade-price-div">
+                    <div className="green-small-graph">
+                      <img src={green_graph} alt="" />
+                    </div>
+                    <div className="current-price-week">
+                      <h2>$18,783.33</h2>
+                      <div className="week-div">
+                        <img src={trade_small_graph} alt="" />
+                        <p>45% This Week</p>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td className='current-table-data-3'>
+                <div className="green-big-graph">
+                <img src={big_graph} alt="" />
+                </div>
+                </td>
+                <td className='current-table-data-4'>
+                    <div className="view-file-div">
+                      <img src={file_symbol} alt="" />
+                      <img src={eye_symbol} alt="" />
+                    </div>
+                </td>
+              </tr>
+              <tr className='current-trade-table-row'>
+              <td className='current-table-data-1'>
+                  <div className="current-logo-name-div">
+                    <img src={Bitcoin_img} alt="" />
+                    <div className="current-name-para">
+                      <h2 className='current-name'>Bitcoin</h2>
+                      <p>BTC</p>
+                    </div>
+                  </div>
+                </td>
+                <td className='current-table-data-2'>
+                  <div className="current-trade-price-div">
+                    <div className="green-small-graph">
+                      <img src={green_graph} alt="" />
+                    </div>
+                    <div className="current-price-week">
+                      <h2>$24,783.33</h2>
+                      <div className="week-div">
+                        <img src={trade_small_graph} alt="" />
+                        <p>45% This Week</p>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td className='current-table-data-3'>
+                <div className="green-big-graph">
+                <img src={big_graph} alt="" />
+                </div>
+                </td>
+                <td className='current-table-data-4'>
+                    <div className="view-file-div">
+                      <img src={file_symbol} alt="" />
+                      <img src={eye_symbol} alt="" />
+                    </div>
+                </td>
+              </tr>
+              <tr className='current-trade-table-row'>
+              <td className='current-table-data-1'>
+                  <div className="current-logo-name-div">
+                    <img src={ngas_img} alt="" />
+                    <div className="current-name-para">
+                      <h2 className='current-name'>NGAS</h2>
+                      <p>XMR</p>
+                    </div>
+                  </div>
+                </td>
+                <td className='current-table-data-2'>
+                  <div className="current-trade-price-div">
+                    <div className="green-small-graph">
+                      <img src={red_graph} alt="" />
+                    </div>
+                    <div className="current-price-week">
+                      <h2>$18,783.33</h2>
+                      <div className="week-div">
+                        <img src={trade_small_graph} alt="" />
+                        <p>45% This Week</p>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td className='current-table-data-3'>
+                <div className="green-big-graph">
+                <img src={big_red_graph} alt="" />
+                </div>
+                </td>
+                <td className='current-table-data-4'>
+                    <div className="view-file-div">
+                      <img src={file_symbol} alt="" />
+                      <img src={eye_symbol} alt="" />
+                    </div>
+                </td>
+              </tr>
+              <tr className='current-trade-table-row'>
+              <td className='current-table-data-1'>
+                  <div className="current-logo-name-div">
+                    <img src={dogusd_img} alt="" />
+                    <div className="current-name-para">
+                      <h2 className='current-name'>DOGUSD</h2>
+                      <p>XMR</p>
+                    </div>
+                  </div>
+                </td>
+                <td className='current-table-data-2'>
+                  <div className="current-trade-price-div">
+                    <div className="green-small-graph">
+                      <img src={green_graph} alt="" />
+                    </div>
+                    <div className="current-price-week">
+                      <h2>$18,783.33</h2>
+                      <div className="week-div">
+                        <img src={trade_small_graph} alt="" />
+                        <p>45% This Week</p>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td className='current-table-data-3'>
+                <div className="green-big-graph">
+                <img src={big_graph} alt="" />
+                </div>
+                </td>
+                <td className='current-table-data-4'>
+                    <div className="view-file-div">
+                      <img src={file_symbol} alt="" />
+                      <img src={eye_symbol} alt="" />
+                    </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+      
           </div>
           <div className="completed-trade">
           <div className="completed-trade-header">

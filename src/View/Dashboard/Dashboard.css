@@ -925,7 +925,7 @@ table{
     width: 100%;
     min-width: 47%;
     max-width: 47%;
-    height: 100%;
+    /* height: 100%; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     object-fit: cover;
@@ -972,6 +972,159 @@ table{
     min-width: 55%;
     max-width: 55%;
   }
+
+  .current-logo-name-div{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .coin-holding-logo-name-div{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .current-logo-name-div img{
+    width: 35px;
+  }
+  .coin-holding-logo-name-div img{
+    width: 35px;
+  }
+  .current-name{
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+  .coin-holding-name{
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+  .current-name-para{
+    display: flex;
+    flex-direction: column;
+  }
+  .coin-holding-name-para{
+    display: flex;
+    flex-direction: column;
+  }
+  .current-name-para p{
+    font-size: 12px;
+  }
+  .coin-holding-name-para p{
+    font-size: 12px;
+  }
+  .current-trade-price-div{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .coin-holding-trade-price-div{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .current-price-week{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .coin-holding-price-div{
+    display: flex;
+    align-items: center;
+  }
+  .coin-holding-price-week{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .green-small-graph img{
+    width: 20px;
+  }
+  .current-price-week h2{
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .coin-holding-price-week h2{
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .week-div{
+    display: flex;
+    align-items: center;
+  }
+  .week-div p{
+    font-size: 12px;
+  }
+  .green-big-graph img{
+    width: 100%;
+  }
+  .view-file-div{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+  }
+  .coin-holding-view-file-div{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+  }
+  .view-file-div img{
+    width: 18px;
+  }
+  .coin-holding-view-file-div img{
+    width: 18px;
+  }
+  .current-table-data-1{
+    width: 200px;
+    max-width: 200px;
+    padding: 15px 0px;
+    
+  }
+  .coin-holding-table-data-1{
+    width: 200px;
+    max-width: 200px;
+    padding: 15px 0px;
+    word-wrap: break-word;
+    word-break: break-all;
+    vertical-align: top;
+  }
+  .current-table-data-2{
+    width: 180px;
+    max-width: 180px;
+    padding: 15px 0px;
+  }
+  .coin-holding-table-data-2{
+    width: 220px;
+    max-width: 220px;
+    padding: 15px 0px;
+    word-wrap: break-word;
+    word-break: break-all;
+    vertical-align: top;
+  }
+  .current-table-data-3{
+    width: 150px;
+    max-width: 150px;
+    padding: 15px 0px;
+  }
+  .coin-holding-table-data-3{
+    width: 150px;
+    max-width: 150px;
+    padding: 15px 0px;
+    word-wrap: break-word;
+    word-break: break-all;
+    vertical-align: top;
+  }
+  .current-table-data-4{
+    width: 120px;
+    max-width: 120px;
+    padding: 15px 0px;
+  }
+  .coin-holding-table-data-4{
+    width: 120px;
+    max-width: 120px;
+    padding: 15px 0px;
+    word-wrap: break-word;
+    word-break: break-all;
+    vertical-align: top;
+  }
   
   
   /* Trade List */
@@ -983,7 +1136,8 @@ table{
   
   .trade-item {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    column-gap: 40px;
     align-items: center;
     padding: 15px 10px;
   }
@@ -993,8 +1147,10 @@ table{
     display: flex;
     align-items: center;
     gap: 15px;
-    width: 120px;
-    max-width: 120px;
+    width: 135px;
+    max-width: 135px;
+    /* border: 1px solid black; */
+    
   }
   
   .trade-icon {
@@ -1011,6 +1167,7 @@ table{
     font-size: 15px;
     font-weight: 600;
     color: #333;
+    
   }
   
   .trade-symbol {
@@ -1026,9 +1183,18 @@ table{
     justify-content: center;
     align-items: center;
     column-gap: 15px;
+    width: 145px;
+    max-width: 145px;
+    /* border: 1px solid black; */
+    
   }
   .trade-price img{
     width: 20px;
+  }
+  .trade-name-symbol{
+    word-wrap: break-word;
+    word-break: break-all;
+    vertical-align: top;
   }
   
   .trade-price h4 {
@@ -1062,12 +1228,17 @@ table{
     margin-top: 5px;
   }
   /* Actions Section */
+  .trade-actions{
+    width: 140px;
+    max-width: 140px;
+  }
   .trade-actions img{
-    width: 130px
+    width: 140px
   }
   .trade-view{
     display: flex;
     column-gap: 10px;
+    
   }
   .trade-view img{
     width: 15px;
@@ -1305,6 +1476,10 @@ table{
     max-width: 45%;
     display: flex;
     column-gap: 15px;
+    overflow-x: scroll;
+  }
+  .weekly-right-box::-webkit-scrollbar{
+    display: none;
   }
   .horizontal-bar-div{
     display: flex;
@@ -1418,6 +1593,22 @@ table{
       min-width: 45%;
       max-width: 45%;
     }
+    .trader_card{
+      overflow-x: scroll;
+    }
+    .trader_card::-webkit-scrollbar{
+      display: none;
+    }
+    .trade-five-div-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .small-div2{
+      width: 100%;
+      min-width: 22%;
+      max-width: 22%;
+    }
+
   }
 
   @media (max-width: 999px){
@@ -1455,8 +1646,58 @@ table{
       min-width: 28%;
       max-width: 28%;
     }
+    .weekly-charts-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .trade-chart{
+      width: 100%;
+      max-width: 40%;
+      min-width: 40%;
+    }
+    .profit-chart{
+      width: 100%;
+      max-width: 40%;
+      min-width: 40%;
+    }
+    .trader_logo{
+      width: 100%;
+      min-width: 40px;
+      max-width: 40px;
+      height: 40px;
+    }
+    .trade_details_wrapper h5{
+      font-size: 14px;
+    }
+    .trade_details_wrapper p{
+      font-size: 11px;
+    }
+    .trade_pattern_div img{
+      width: 30px;
+    }
+    .small-div2{
+      width: 100%;
+      min-width: 30%;
+      max-width: 30%;
+    }
+    .recent-activity{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .recent-week-summary-section{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .weekly-summary-graph-section{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    
 
   }
+  
   @media (max-width: 860px){
     .sell-buy-section{
       display: flex;
@@ -1498,6 +1739,45 @@ table{
       width: 100%;
       min-width: 32%;
       max-width: 32%;
+    }
+    .current-completed-section{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .current-trade-container{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .completed-trade{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .weekly-summary{
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+    }
+    .trade-chart{
+      width: 100%;
+      min-width: 45%;
+      max-width: 45%;
+    }
+    .profit-chart{
+      width: 100%;
+      min-width: 45%;
+      max-width: 45%;
+    }
+    .current-graph{
+      width: 100%;
+      max-width: 40%;
+      min-width: 40%;
+    }
+    .trader_card{
+      width: 100%;
+      min-width: 28%;
+      max-width: 28%;
     }
   }
 
@@ -1554,6 +1834,37 @@ table{
       min-width: 35%;
       max-width: 35%;
     }
+    .trader_card{
+      width: 100%;
+      min-width: 30%;
+      max-width: 30%;
+    }
+    .profile-current-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 20px;
+    }
+    .profile-section{
+      width: 100%;
+      min-width: 40%;
+      max-width: 40%;
+    }
+    .recent-week-summary-section{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .recent-activity{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .current-trade{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    
     
   }
 
@@ -1566,12 +1877,67 @@ table{
     }
   }
 
+  @media (max-width: 640px){
+    .trader_card{
+      width: 100%;
+      min-width: 28%;
+      max-width: 28%;
+    }
+  }
+
   @media (max-width: 560px){
     .sell-order-table-container{
       padding: 20px;
     }
     .buy-order-table-container{
       padding: 20px;
+    }
+    .trader_card{
+      width: 100%;
+      min-width: 45%;
+      max-width: 45%;
+    }
+  }
+
+  @media (max-width: 567px){
+    .trade-five-div-wrapper{
+      row-gap: 15px;
+    }
+    .small-div2{
+      width: 100%;
+      min-width: 47%;
+      max-width: 47%;
+    }
+    .profile-section{
+      width: 100%;
+      min-width: 60%;
+      max-width: 60%;
+    }
+    .current-trade{
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+    }
+    .recent-week-summary-section{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .recent-activity{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .weekly-summary-graph-section{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+    }
+    .weekly-summary-section{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
     }
   }
 
@@ -1581,6 +1947,24 @@ table{
       width: 100%;
       min-width: 47%;
       max-width: 47%;
+    }
+    .chart-section{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      row-gap: 15px;
+    }
+    .transaction-income-charts{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .current-graph-chart{
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
     }
   }
   @media (max-width: 480px){
@@ -1598,6 +1982,30 @@ table{
       width: 100%;
       min-width: 100%;
       max-width: 100%;
+    }
+    .weekly-left-box{
+      overflow-x: scroll;
+    }
+    .weekly-left-box::-webkit-scrollbar{
+      display: none;
+    }
+  }
+  @media (max-width: 440px){
+    .trade-five-div-wrapper{
+      row-gap: 15px;
+    }
+    .small-div2{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .trader_card{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .balance-button{
+      padding: 10px 10px !important;
     }
   }
   @media (max-width: 420px){
@@ -1617,6 +2025,26 @@ table{
 
     .header-text p{
       font-size: 10px;
+    }
+    .trade-chart{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .profit-chart{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .current-graph{
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+    }
+    .profile-section{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
     }
   }
   @media (max-width: 350px){
