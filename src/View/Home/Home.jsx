@@ -46,7 +46,7 @@ esteemed trading enterprise, a beacon of excellence
 in the industry</p>
 
 <div className='trading_btn_wrapper'>
-    <button>Start Trading</button>
+    <button className='trading_button'>Start Trading</button>
     <div className='yellow_circle'>
    <img src={arrow}/>
     </div>

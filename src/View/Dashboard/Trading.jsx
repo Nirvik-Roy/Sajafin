@@ -32,7 +32,7 @@ const Trading = () => {
                         borderRadius:"10px",
                         border:'none',
                         marginTop:"15px"
-                    }} className='btn btn-success'>Withdraw</button>
+                    }} className='btn btn-success trade-chart-button'>Withdraw</button>
                 </div>
             </div>
         </div>

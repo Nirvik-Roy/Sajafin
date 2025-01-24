@@ -156,18 +156,25 @@ const AccountSettings = () => {
 
 
 
-          <div className="current-trade">
-                      <div className="current-trade-header">
-                        <h2 className='current-trade-heading'>Coin Holding</h2>
-                        <div className="current-trade-btn">Current</div>
-                      </div>
+          <div className="current-trade" style={{overflowX: 'auto'}}>
+
+                      
           
           
                       {/* Trade List */}
-                      <table>
+                      <table className='coin-holding-table'>
+                      <thead>
+                        <tr>
+                          <th className='coin-holding-table-heading-1'>Coin Holding</th>
+                          <th className='coin-holding-table-heading-2'></th>
+                          <th className='coin-holding-table-heading-3'></th>
+                          <th className='coin-holding-table-heading-4'></th>
+                          <th><div className="current-trade-btn">Current</div></th>
+                        </tr>
+                      </thead>
                                   <tbody>
                                     <tr className='coin-holding-table-row'>
-                                      <td className='coin-holding-table-data-1'>
+                                      <td className='coin-holding-table-data'>
                                         <div className="coin-holding-logo-name-div">
                                           <img src={xauusd_img} alt="" />
                                           <div className="coin-holding-name-para">
@@ -176,7 +183,7 @@ const AccountSettings = () => {
                                           </div>
                                         </div>
                                       </td>
-                                      <td className='coin-holding-table-data-2'>
+                                      <td className='coin-holding-table-data'>
                                         <div className="coin-holding-price-div">
                                           <div className="green-small-graph">
                                             <img src={green_graph} alt="" />
@@ -190,12 +197,12 @@ const AccountSettings = () => {
                                           </div>
                                         </div>
                                       </td>
-                                      <td className='coin-holding-table-data-3'>
+                                      <td className='coin-holding-table-data'>
                                       <div className="green-big-graph">
                                       <img src={big_graph} alt="" />
                                       </div>
                                       </td>
-                                      <td className='coin-holding-table-data-4'>
+                                      <td className='coin-holding-table-data'>
                                           <div className="coin-holding-view-file-div">
                                             <img src={file_symbol} alt="" />
                                             <img src={eye_symbol} alt="" />
@@ -203,7 +210,7 @@ const AccountSettings = () => {
                                       </td>
                                     </tr>
                                     <tr className='coin-holding-table-row'>
-                                    <td className='coin-holding-table-data-1'>
+                                    <td className='coin-holding-table-data'>
                                         <div className="coin-holding-logo-name-div">
                                           <img src={Bitcoin_img} alt="" />
                                           <div className="coin-holding-name-para">
@@ -212,7 +219,7 @@ const AccountSettings = () => {
                                           </div>
                                         </div>
                                       </td>
-                                      <td className='coin-holding-table-data-2'>
+                                      <td className='coin-holding-table-data'>
                                         <div className="coin-holding-price-div">
                                           <div className="green-small-graph">
                                             <img src={green_graph} alt="" />
@@ -226,12 +233,12 @@ const AccountSettings = () => {
                                           </div>
                                         </div>
                                       </td>
-                                      <td className='coin-holding-table-data-3'>
+                                      <td className='coin-holding-table-data'>
                                       <div className="green-big-graph">
                                       <img src={big_graph} alt="" />
                                       </div>
                                       </td>
-                                      <td className='coin-holding-table-data-4'>
+                                      <td className='coin-holding-table-data'>
                                           <div className="coin-holding-view-file-div">
                                             <img src={file_symbol} alt="" />
                                             <img src={eye_symbol} alt="" />
@@ -239,7 +246,7 @@ const AccountSettings = () => {
                                       </td>
                                     </tr>
                                     <tr className='coin-holding-table-row'>
-                                    <td className='coin-holding-table-data-1'>
+                                    <td className='coin-holding-table-data'>
                                         <div className="coin-holding-logo-name-div">
                                           <img src={ngas_img} alt="" />
                                           <div className="coin-holding-name-para">
@@ -248,7 +255,7 @@ const AccountSettings = () => {
                                           </div>
                                         </div>
                                       </td>
-                                      <td className='coin-holding-table-data-2'>
+                                      <td className='coin-holding-table-data'>
                                         <div className="coin-holding-price-div">
                                           <div className="green-small-graph">
                                             <img src={red_graph} alt="" />
@@ -262,12 +269,12 @@ const AccountSettings = () => {
                                           </div>
                                         </div>
                                       </td>
-                                      <td className='coin-holding-table-data-3'>
+                                      <td className='coin-holding-table-data'>
                                       <div className="green-big-graph">
                                       <img src={big_red_graph} alt="" />
                                       </div>
                                       </td>
-                                      <td className='coin-holding-table-data-4'>
+                                      <td className='coin-holding-table-data'>
                                           <div className="coin-holding-view-file-div">
                                             <img src={file_symbol} alt="" />
                                             <img src={eye_symbol} alt="" />
@@ -275,7 +282,7 @@ const AccountSettings = () => {
                                       </td>
                                     </tr>
                                     <tr className='coin-holding-table-row'>
-                                    <td className='coin-holding-table-data-1'>
+                                    <td className='coin-holding-table-data'>
                                         <div className="coin-holding-logo-name-div">
                                           <img src={dogusd_img} alt="" />
                                           <div className="coin-holding-name-para">
@@ -284,7 +291,7 @@ const AccountSettings = () => {
                                           </div>
                                         </div>
                                       </td>
-                                      <td className='coin-holding-table-data-2'>
+                                      <td className='coin-holding-table-data'>
                                         <div className="coin-holding-price-div">
                                           <div className="green-small-graph">
                                             <img src={green_graph} alt="" />
@@ -298,12 +305,12 @@ const AccountSettings = () => {
                                           </div>
                                         </div>
                                       </td>
-                                      <td className='coin-holding-table-data-3'>
+                                      <td className='coin-holding-table-data'>
                                       <div className="green-big-graph">
                                       <img src={big_graph} alt="" />
                                       </div>
                                       </td>
-                                      <td className='coin-holding-table-data-4'>
+                                      <td className='coin-holding-table-data'>
                                           <div className="coin-holding-view-file-div">
                                             <img src={file_symbol} alt="" />
                                             <img src={eye_symbol} alt="" />

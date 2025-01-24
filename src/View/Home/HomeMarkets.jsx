@@ -40,7 +40,7 @@ const HomeMarkets = () => {
             </div>
         </div>
         <div className='right_market_div'>
-        <p>MARKETS</p>
+        <p className='right_market_div-market-btn'>MARKETS</p>
         <h1>Explore top-tier
          
 

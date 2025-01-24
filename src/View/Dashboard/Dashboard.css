@@ -608,8 +608,13 @@ table{
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     width: 100%;
-    min-width: 68%;
-    max-width: 68%;
+  }
+  .current-trade::-webkit-scrollbar {
+    display: none;
+  }
+  .coin-holding-table{
+    width: 100%;
+    min-width: 700px;
   }
   .recent-week-summary-section{
     margin-top: 40px;
@@ -959,9 +964,6 @@ table{
   }
   
   
-  
-  
-  
   /* Container */
   .current-trade-container {
     background: #fff;
@@ -969,8 +971,13 @@ table{
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     width: 100%;
-    min-width: 55%;
-    max-width: 55%;
+  }
+  .current-trade-table{
+    width: 100%;
+    min-width: 500px;
+  }
+  .current-trade-container::-webkit-scrollbar{
+    display: none;
   }
 
   .current-logo-name-div{
@@ -1029,6 +1036,7 @@ table{
   .coin-holding-price-div{
     display: flex;
     align-items: center;
+    column-gap: 10px;
   }
   .coin-holding-price-week{
     display: flex;
@@ -1053,6 +1061,9 @@ table{
   .week-div p{
     font-size: 12px;
   }
+  .week-div img{
+    display: none;
+  }
   .green-big-graph img{
     width: 100%;
   }
@@ -1072,58 +1083,56 @@ table{
   .coin-holding-view-file-div img{
     width: 18px;
   }
+  .coin-holding-table-data{
+    padding: 15px 0px 15px 0px;
+    word-wrap: break-word;
+    word-break: break-all;
+    vertical-align: top;
+  }
   .current-table-data-1{
     width: 200px;
     max-width: 200px;
     padding: 15px 0px;
     
   }
-  .coin-holding-table-data-1{
+  
+  .coin-holding-table-heading-1{
     width: 200px;
     max-width: 200px;
-    padding: 15px 0px;
-    word-wrap: break-word;
-    word-break: break-all;
-    vertical-align: top;
+   
   }
   .current-table-data-2{
     width: 180px;
     max-width: 180px;
     padding: 15px 0px;
   }
-  .coin-holding-table-data-2{
+  .coin-holding-table-heading-2{
     width: 220px;
     max-width: 220px;
     padding: 15px 0px;
-    word-wrap: break-word;
-    word-break: break-all;
-    vertical-align: top;
+    
   }
   .current-table-data-3{
     width: 150px;
     max-width: 150px;
     padding: 15px 0px;
   }
-  .coin-holding-table-data-3{
+  .coin-holding-table-heading-3{
     width: 150px;
     max-width: 150px;
     padding: 15px 0px;
-    word-wrap: break-word;
-    word-break: break-all;
-    vertical-align: top;
+    
   }
   .current-table-data-4{
     width: 120px;
     max-width: 120px;
     padding: 15px 0px;
   }
-  .coin-holding-table-data-4{
+  .coin-holding-table-heading-4{
     width: 120px;
     max-width: 120px;
     padding: 15px 0px;
-    word-wrap: break-word;
-    word-break: break-all;
-    vertical-align: top;
+    
   }
   
   
@@ -1534,6 +1543,53 @@ table{
     border-radius: 10px;
     position: absolute;
   }
+  .homepage_hamburger_button{
+    display: none;
+  }
+  .homepage-sidebar-cross-button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* Sidebar Styles */
+  .sidebar_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 230px;
+  background-color: #efece5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  gap: 15px;
+  transition: left 0.3s ease;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar_links {
+  color: #333;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 12px 0px;
+}
+
+.sidebar_links:hover {
+  color: #3498db;
+}
+
+
+
 
   
   @media(max-width:1400px){
@@ -1611,7 +1667,18 @@ table{
 
   }
 
+  @media (max-width: 1150px){
+    .phone_bottom_wrapper{
+      column-gap: 10px;
+    }
+  }
+
+
+
   @media (max-width: 999px){
+    .homepage_hamburger_button{
+      display: flex;
+    }
     .crypto-market-section-wrapper{
       display: flex;
       flex-wrap: wrap;
@@ -1694,8 +1761,89 @@ table{
       min-width: 100%;
       max-width: 100%;
     }
-    
+    .nav_links_wrapper{
+      display: none;
+    }
+    .left_market_div252{
+      grid-template-rows: auto;
+    }
+    .left_market_div{
+      grid-template-rows: auto;
+    }
+    .home_container_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .left_home_div{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .right_home_div{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      margin-top: 40px;
+    }
+    .profile-current-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 30px;
+    }
+    .profile-section{
+      width: 100%;
+      min-width: 40%;
+      max-width: 40%;
+    }
+    .current-trade{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .trader_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .trader_div_left{
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+    }
 
+  }
+
+  @media (max-width: 899px){
+    .left_challenged_div{
+      width: 100%;
+      min-width: 55%;
+      max-width: 55%;
+    }
+    .compromise_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 30px;
+    }
+    .left_compromise_div{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .right_compromise_div{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .guides_card_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 30px;
+    }
+    .guide_card_1, .guide_card_2, .guide_card_3{
+      width: 100%;
+      min-width: 47%;
+      max-width: 47%;
+    }
   }
   
   @media (max-width: 860px){
@@ -1779,9 +1927,12 @@ table{
       min-width: 28%;
       max-width: 28%;
     }
+    
   }
 
+
   @media (max-width: 768px) {
+  
     .small-div{
       width: 100%;
       min-width: 48%;
@@ -1839,17 +1990,7 @@ table{
       min-width: 30%;
       max-width: 30%;
     }
-    .profile-current-wrapper{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      row-gap: 20px;
-    }
-    .profile-section{
-      width: 100%;
-      min-width: 40%;
-      max-width: 40%;
-    }
+  
     .recent-week-summary-section{
       display: flex;
       flex-wrap: wrap;
@@ -1859,13 +2000,121 @@ table{
       min-width: 100%;
       max-width: 100%;
     }
-    .current-trade{
+    
+    .home_market_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .left_market_div{
       width: 100%;
       min-width: 100%;
       max-width: 100%;
     }
+    .right_market_div{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .right_market_div p{
+      text-align: center;
+      margin-bottom: 10px !important;
+    }
+    .guide_lines_div_wrapper{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .span_para{
+      margin-top: 20px ;
+    }
+    .core_principles_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .left_market_div252{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      margin-top: 30px;
+    }
+    .challenged_div_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .left_challenged_div{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .right_challenged_div{
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+    }
+    .get_started_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .compromise_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .left_compromise_div{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .right_compromise_div{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      margin-top: 30px;
+    }
     
     
+    .img_div_656{
+      width: 100%;
+      min-width: 95%;
+      max-width: 95%;
+      height: 200px;
+    }
+    .card_head{
+    font-size: 15px;
+    }
+    .card_para{
+      font-size: 10px;
+      line-height: 17px;
+    }
+    .trade-chart-button{
+      padding: 10px 15px !important;
+      font-size: 10px !important;
+    }
+    .current_balance_head_wrapper h2{
+      font-size: 14px;
+    }
+    .current_balance_div h3{
+      font-size: 16px;
+    }
+    
+  }
+
+  @media (max-width: 699px){
+    .guide_card_1, .guide_card_2, .guide_card_3{
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+    }
+    .guides_card_wrapper{
+      row-gap: 30px;
+    }
+    .trader_div_left{
+      height: 100vh;
+    }
   }
 
   @media (max-width: 670px){
@@ -1874,6 +2123,11 @@ table{
     }
     .buy-order-table-container{
       padding: 20px 50px;
+    }
+    .small_phone_div{
+      width: 100%;
+      max-width: 26%;
+      min-width: 26%;
     }
   }
 
@@ -1884,20 +2138,18 @@ table{
       max-width: 28%;
     }
   }
-
-  @media (max-width: 560px){
-    .sell-order-table-container{
-      padding: 20px;
-    }
-    .buy-order-table-container{
-      padding: 20px;
-    }
-    .trader_card{
+  @media (max-width: 580px){
+    .list_one_div span{
       width: 100%;
-      min-width: 45%;
-      max-width: 45%;
+    }
+    .trader_div_left{
+      height: auto;
+    }
+    .current_balance_div h3{
+      font-size: 12px;
     }
   }
+
 
   @media (max-width: 567px){
     .trade-five-div-wrapper{
@@ -1938,6 +2190,48 @@ table{
       width: 100%;
       min-width: 100%;
       max-width: 100%;
+    }
+    .footer_content_Wrapper{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .footer_div1{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      padding: 30px 0px;
+    }
+    .footer_div2{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .footer_div_content_1{
+      padding: 50px 0px 50px 0px;
+    }
+    .guides_card_wrapper{
+      row-gap: 20px;
+    }
+    .guide_card_1, .guide_card_2, .guide_card_3{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+
+  }
+
+
+   @media (max-width: 560px){
+    .sell-order-table-container{
+      padding: 20px;
+    }
+    .buy-order-table-container{
+      padding: 20px;
+    }
+    .trader_card{
+      width: 100%;
+      min-width: 45%;
+      max-width: 45%;
     }
   }
 
@@ -1983,12 +2277,44 @@ table{
       min-width: 100%;
       max-width: 100%;
     }
-    .weekly-left-box{
-      overflow-x: scroll;
+    .total_trades_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 20px;
     }
-    .weekly-left-box::-webkit-scrollbar{
-      display: none;
+    .trade_div_1{
+      width: 100%;
+      min-width: 47%;
+      max-width: 47%;
     }
+
+    .left_small_phone_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      row-gap: 20px;
+    }
+    .small_phone_div{
+      width: 100%;
+      min-width: 40%;
+      max-width: 40%;
+    }
+    .small_phone_details_div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .left_challenge p{
+      font-size: 10px;
+    }
+    .challenge_img{
+      width: 35px;
+      height: 43px;
+    }
+    
   }
   @media (max-width: 440px){
     .trade-five-div-wrapper{
@@ -2046,6 +2372,98 @@ table{
       min-width: 100%;
       max-width: 100%;
     }
+    .trade_div_1{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 400px){
+    .footer_div2{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .footer_div_content_1{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    
+    .left_home_content_div h1{
+      font-size: 40px;
+    }
+    .trading_button{
+      padding: 10px 10px !important;
+    }
+    .trading_btn_wrapper button{
+      font-size: 12px;
+    }
+    .yellow_circle{
+      width: 100%;
+      min-width: 35px;
+      max-width: 35px;
+      height: 35px;
+    }
+    .right_home_div{
+      display: flex;
+      flex-direction: column;
+    }
+    .left_market_div{
+      display: grid;
+      grid-template-rows: auto;
+    }
+    .left_market_div252{
+      display: grid;
+      grid-template-rows: auto;
+    }
+    .right_phone{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      
+    }
+    .right_phone_small_img_wrapper{
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      height: 100%;
+      margin-top: 30px;
+    }
+    .right_small_img1{
+      height: 100%;
+    }
+    .right_compromise_div{
+      display: flex;
+      flex-direction: column;
+    }
+    .img_div_656{
+      height: 200px;
+      max-width: 95%;
+      min-width: 95%;
+    }
+    
+    .card_head{
+      font-size: 15px;
+    }
+    .card_para{
+      font-size: 10px;
+      line-height: 17px;
+    }
+    .compromise_logo{
+      height: 40px;
+    }
+    .compromise_details h3{
+      font-size: 20px;
+    }
+    .trader_div_left{
+      height: auto;
+    }
+    .trade-chart-button{
+      padding: 8px 12px !important;
+      font-size: 10px !important;
+    }
+
+    
   }
   @media (max-width: 350px){
     .crypto-buttons{

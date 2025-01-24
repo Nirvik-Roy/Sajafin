@@ -184,13 +184,13 @@ const Statistics = () => {
     <Header2 name={'Statistics'}/>
       <div className="dashboard-container" style={{paddingBottom: "50px"}}>
         <div className="current-completed-section">
-          <div className="current-trade-container" style={{overflowX: scroll}}>
+          <div className="current-trade-container" style={{overflowX: 'auto'}}>
           <div className="current-trade-header">
               <h2 className='current-trade-heading'>Current Trade</h2>
               <div className="current-trade-btn">Current</div>
             </div>
           
-          <table>
+          <table className='current-trade-table'>
             <tbody>
               <tr className='current-trade-table-row'>
                 <td className='current-table-data-1'>
