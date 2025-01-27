@@ -1319,8 +1319,8 @@ table{
   .transaction-info {
     display: flex;
     align-items: center;
-    width: 130px;
-    min-width: 130px;
+    width: 200px;
+    min-width: 200px;
   }
   
   .transaction-logo img {
@@ -1340,8 +1340,8 @@ table{
   .transaction-time {
     font-size: 14px;
     color: #969598;
-    width: 130px;
-    min-width: 130px;
+    width: 200px;
+    min-width: 200px;
     word-wrap: break-word;
     word-break: break-all;
     vertical-align: top;
@@ -1350,8 +1350,8 @@ table{
   .transaction-price {
     font-size: 14px;
     font-weight: 500;
-    width: 120px;
-    min-width: 120px;
+    width: 170px;
+    min-width: 170px;
     word-wrap: break-word;
     word-break: break-all;
     vertical-align: top;
@@ -1592,7 +1592,7 @@ table{
 
 
   
-  @media(max-width:1400px){
+  /* @media(max-width:1400px){
     .activity-time{
       width: 110px;
       max-width: 110px;
@@ -1603,7 +1603,7 @@ table{
       max-width: 110px;
       min-width: 110px;
     }
-  }
+  } */
 
   @media (max-width: 1299px) {
     .small-div{
@@ -1639,6 +1639,21 @@ table{
     }
   }
   @media (max-width: 1199px) {
+    .current-completed-section{
+      flex-wrap: wrap;
+    }
+    .current-trade-container{
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      padding: 20px 120px;
+    }
+    .completed-trade{
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      padding: 20px 120px;
+    }
     .four-divs-wrapper{
       display: flex;
       flex-wrap: wrap;
@@ -1676,6 +1691,18 @@ table{
 
 
   @media (max-width: 999px){
+    .current-trade-container{
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      padding: 20px 20px;
+    }
+    .completed-trade{
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      padding: 20px 20px;
+    }
     .homepage_hamburger_button{
       display: flex;
     }
@@ -1793,8 +1820,8 @@ table{
     }
     .profile-section{
       width: 100%;
-      min-width: 40%;
-      max-width: 40%;
+      min-width: 100%;
+      max-width: 100%;
     }
     .current-trade{
       width: 100%;
@@ -1804,6 +1831,7 @@ table{
     .trader_wrapper{
       display: flex;
       flex-wrap: wrap;
+      flex-direction: column-reverse;
     }
     .trader_div_left{
       width: 100%;
@@ -1932,7 +1960,9 @@ table{
 
 
   @media (max-width: 768px) {
-  
+  .completed-trade{
+    padding: 20px 20px;
+  }
     .small-div{
       width: 100%;
       min-width: 48%;
@@ -1960,7 +1990,7 @@ table{
       font-size: 18px !important;
     }
     .sidebar-section{
-      position: absolute;
+      position: fixed;
       /* transform: translate(-100%, 0px); */
     }
     .dashboard-container{
@@ -2143,7 +2173,7 @@ table{
       width: 100%;
     }
     .trader_div_left{
-      height: auto;
+      height: 80vh;
     }
     .current_balance_div h3{
       font-size: 12px;
@@ -2456,7 +2486,7 @@ table{
       font-size: 20px;
     }
     .trader_div_left{
-      height: auto;
+      height: 80vh;
     }
     .trade-chart-button{
       padding: 8px 12px !important;
