@@ -14,9 +14,9 @@ const Trading = () => {
      <div className='dashboard-container'>
         <div className='trader_wrapper'>
             <div className='trader_div_left' >
-                {/* <p className='bitcoin_para'><img src={img}/>Bitcoin / U.S. Dollar - 1D - BITSTAMP</p>
-                <TradeChart/> */}
-               <img src={tradeimg}/>
+                <p className='bitcoin_para'><img src={img}/>Bitcoin / U.S. Dollar - 1D - BITSTAMP</p>
+                <TradeChart/>
+               {/* <img className='trading_img55' src={tradeimg}/> */}
             </div>
             <div className='trader_div_right d-flex justify-content-center' >
                 <div className='current_balance_div'>

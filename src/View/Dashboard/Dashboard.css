@@ -380,7 +380,7 @@ table{
     width: 100%;
     max-width: 75%;
     min-width: 75%;
-    height: 84vh;
+    height: 80vh;
     position: relative;
     margin-top: 10px;
   }
@@ -524,7 +524,7 @@ table{
     font-size: 13px;
     color: #8E8E90;
   }
-  .trader_div_left img{
+  .trading_img55{
     width: 100%;
     max-width: 100%;
     min-width: 100%;
@@ -1604,7 +1604,11 @@ table{
       min-width: 110px;
     }
   } */
-
+  @media (max-width: 1499px) {
+    .trader_div_left{
+      height: 78vh;
+    }
+  }
   @media (max-width: 1299px) {
     .small-div{
       width: 100%;
